@@ -21,6 +21,10 @@ jobs:
       with:
         python-version: 3.11.6  
     - name: Run tests
-      run: python -m unittest test_suma.py
+      run: |
+        python -m unittest test_suma.py
+        python -m unittest test_resta.py
+        python -m unittest test_multipli.py
+        python -m unittest test_division.py
 
     
